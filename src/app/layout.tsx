@@ -18,7 +18,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={leagueSpartan.className}>
-        <Navbar />
+        <Navbar
+          linksList={[
+            {
+              label: "home",
+              href: "#",
+            },
+            {
+              label: "shop",
+              href: "#",
+            },
+            {
+              label: "about",
+              href: "#",
+            },
+            {
+              label: "contact",
+              href: "#",
+            },
+          ]}
+        />
         {children}
       </body>
     </html>
