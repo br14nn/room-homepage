@@ -2,9 +2,9 @@
 
 import { nanoid } from "nanoid";
 import { motion, Variants } from "framer-motion";
-import Link from "next/link";
 
 import CloseNavButton from "./CloseNavButton";
+import NavLinkList from "./NavLinkList";
 
 type TNavLinksMobileProps = {
   linksList: TLink[];
@@ -14,7 +14,7 @@ type TNavLinksMobileProps = {
 
 const variants: Variants = {
   close: {
-    top: "-100vh",
+    top: "-20vh",
   },
   open: {
     top: "0vh",
@@ -37,13 +37,14 @@ export default function NavLinksMobile({
 
       <ul className="flex flex-row items-center justify-center gap-7">
         {linksList.map((link) => (
-          <Link
+          <NavLinkList
             key={nanoid()}
             className="font-bold text-black"
+            hrClassName="border-black"
             href={link.href}
           >
             {link.label}
-          </Link>
+          </NavLinkList>
         ))}
       </ul>
     </motion.div>

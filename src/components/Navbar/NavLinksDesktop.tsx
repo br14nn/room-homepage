@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import Link from "next/link";
+import NavLinkList from "./NavLinkList";
 
 type TNavLinksDesktopProps = {
   linksList: TLink[];
@@ -7,12 +7,12 @@ type TNavLinksDesktopProps = {
 
 export default function NavLinksDesktop({ linksList }: TNavLinksDesktopProps) {
   return (
-    <div className="hidden flex-row items-center justify-center gap-7 sm:flex">
+    <ul className="hidden flex-row items-center justify-center gap-7 sm:flex">
       {linksList.map((link) => (
-        <Link key={nanoid()} className="font-bold text-white" href={link.href}>
+        <NavLinkList key={nanoid()} href={link.href}>
           {link.label}
-        </Link>
+        </NavLinkList>
       ))}
-    </div>
+    </ul>
   );
 }

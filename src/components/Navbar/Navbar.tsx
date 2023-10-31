@@ -26,7 +26,7 @@ export default function Navbar({ linksList }: TNavbarProps) {
     <>
       {animateState === "open" && (
         <div
-          className="fixed inset-0 z-[998] h-screen w-screen bg-black/50 sm:hidden"
+          className="fixed inset-0 z-[998] h-screen w-screen bg-very-dark-gray/20 sm:hidden"
           onClick={handleCloseNav}
         />
       )}
