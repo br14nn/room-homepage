@@ -31,11 +31,11 @@ export default function NavLinksMobile({
       initial={false}
       variants={variants}
       animate={animateState}
-      className="fixed left-0 right-0 flex flex-row items-center justify-between bg-white p-12 sm:hidden"
+      className="fixed left-0 right-0 flex flex-row items-center justify-between bg-white px-6 py-12 sm:hidden sm:px-12"
     >
       <CloseNavButton onClick={closeNavOnClick} />
 
-      <ul className="flex flex-row items-center justify-center gap-7">
+      <ul className="xs:gap-5 flex flex-row items-center justify-center gap-3 sm:gap-7">
         {linksList.map((link) => (
           <NavLinkList
             key={nanoid()}

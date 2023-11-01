@@ -18,12 +18,16 @@ const config: Config = {
         "very-dark-gray": "hsl(0, 0%, 27%)",
       },
       fontSize: {
-        base: ".75rem",
+        sm: "0.75rem",
+        base: "1rem",
         lg: "1.25rem",
         xl: "1.563rem",
         "2xl": "1.953rem",
       },
       screens: {
+        xs: "360px",
+        // => @media (min-width: 360px) { ... }
+
         sm: "640px",
         // => @media (min-width: 640px) { ... }
 
