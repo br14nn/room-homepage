@@ -25,23 +25,23 @@ const config: Config = {
         "2xl": "1.953rem",
       },
       screens: {
-        xs: "22.5rem",
-        // => @media (min-width: 22.5rem) { ... }
+        xs: "360px",
+        // => @media (min-width: 360px) { ... }
 
-        sm: "40rem",
-        // => @media (min-width: 40rem) { ... }
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
 
-        md: "48rem",
-        // => @media (min-width: 48rem) { ... }
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
 
-        lg: "64rem",
-        // => @media (min-width: 64rem) { ... }
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
 
-        xl: "80rem",
-        // => @media (min-width: 80rem) { ... }
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
 
-        "2xl": "96rem",
-        // => @media (min-width: 96rem) { ... }
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
       },
     },
   },
