@@ -1,4 +1,4 @@
-import CloseIcon from "@/assets/svg/CloseIcon";
+import CloseIcon from "@/components/Navbar/CloseIcon";
 
 type TCloseNavButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;

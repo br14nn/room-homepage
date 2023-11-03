@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import Logo from "@/assets/svg/Logo";
+import Logo from "@/components/Navbar/Logo";
 import OpenNavButton from "./OpenNavButton";
 import NavLinksDesktop from "./NavLinksDesktop";
 import NavLinksMobile from "./NavLinksMobile";

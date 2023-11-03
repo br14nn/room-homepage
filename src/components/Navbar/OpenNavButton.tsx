@@ -1,7 +1,7 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import HambugerIcon from "@/assets/svg/HambugerIcon";
+import HambugerIcon from "@/components/Navbar/HambugerIcon";
 
 type TOpenNavButtonProps = {
   className?: string;
