@@ -30,7 +30,7 @@ export default function Navbar({ linksList }: TNavbarProps) {
           onClick={handleCloseNav}
         />
       )}
-      <nav className="fixed z-[999] flex w-full flex-row items-center justify-between gap-14 px-6 py-12 text-white sm:justify-normal sm:px-12">
+      <nav className="fixed left-0 right-0 z-[999] mx-auto flex w-full max-w-[1920px] flex-row items-center justify-between gap-14 px-6 py-12 text-white sm:justify-normal sm:px-12">
         <OpenNavButton onClick={handleOpenNav} />
         <Logo />
         <div className="block w-[20px] sm:hidden" />

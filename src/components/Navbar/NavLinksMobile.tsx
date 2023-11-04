@@ -14,7 +14,7 @@ type TNavLinksMobileProps = {
 
 const variants: Variants = {
   close: {
-    top: "-20vh",
+    top: "-100%",
   },
   open: {
     top: "0vh",
