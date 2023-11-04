@@ -20,26 +20,28 @@ export default function SlideContent({
   description,
 }: TSlideContentProps) {
   return (
-    <div className="flex h-full w-full flex-row items-center justify-center bg-white">
+    <div className="flex h-full w-full flex-col items-center justify-center bg-white md:flex-row">
       <SlideImageContainer>
         <Image
-          className="h-full w-full object-cover"
+          className="block h-full w-full object-cover"
           src={desktopImgSrc}
           alt={imgAlt}
         />
       </SlideImageContainer>
       <SlideDescriptionContainer>
-        <h1 className="text-3xl font-[600] leading-none tracking-tight  text-black 2xl:text-4xl">
+        <h1 className="text-2xl font-[600] leading-none tracking-tight text-black xs:text-3xl 2xl:text-4xl">
           {title}
         </h1>
 
-        <p className="font-[500] text-dark-gray">{description}</p>
+        <p className="text-sm font-[500] text-dark-gray xs:text-base">
+          {description}
+        </p>
 
         <Link
           className="group/shopNowLink flex w-fit flex-row items-center justify-center gap-6 font-[500]"
           href="#"
         >
-          <p className="text-lg tracking-[0.5em] group-hover/shopNowLink:text-very-dark-gray">
+          <p className="text-base tracking-[0.5em] group-hover/shopNowLink:text-very-dark-gray xs:text-lg">
             SHOP NOW
           </p>
 

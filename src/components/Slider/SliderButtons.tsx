@@ -7,7 +7,7 @@ export default function SliderButtons() {
 
   return (
     <>
-      <div className="absolute bottom-0 left-[60%] z-[999] flex flex-row items-center justify-center">
+      <div className="absolute bottom-1/2 right-0 z-[999] flex flex-row items-center justify-center md:bottom-0 md:left-[50%] md:right-auto lg:left-[60%]">
         <CustomButton onClick={() => swiper.slidePrev()}>
           <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
