@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import SlideImageContainer from "./SlideImageContainer";
 import SlideDescriptionContainer from "./SlideDescriptionContainer";
+import ShopNowLink from "./ShopNowLink";
 
 type TSlideContentProps = {
   desktopImgSrc: any;
@@ -33,27 +34,11 @@ export default function SlideContent({
           {title}
         </h1>
 
-        <p className="text-sm font-[500] text-dark-gray xs:text-base">
+        <p className="text-sm font-[500] leading-snug text-dark-gray xs:text-base">
           {description}
         </p>
 
-        <Link
-          className="group/shopNowLink flex w-fit flex-row items-center justify-center gap-6 font-[500]"
-          href="#"
-        >
-          <p className="text-base tracking-[0.5em] group-hover/shopNowLink:text-very-dark-gray xs:text-lg">
-            SHOP NOW
-          </p>
-
-          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
-            <path
-              className="fill-black group-hover/shopNowLink:fill-very-dark-gray"
-              d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-              fill="#000"
-              fillRule="nonzero"
-            />
-          </svg>
-        </Link>
+        <ShopNowLink />
       </SlideDescriptionContainer>
     </div>
   );
