@@ -1,4 +1,5 @@
 "use client";
+
 import { nanoid } from "nanoid";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,7 +27,8 @@ export default function Slider({ data }: TSliderProps) {
       {data.map((room) => (
         <SwiperSlide key={nanoid()}>
           <SlideContent
-            desktopImgLink={room.desktopImgLink}
+            desktopImgSrc={room.desktopImgSrc}
+            mobileImgSrc={room.mobileImgSrc}
             imgAlt={room.imgAlt}
             title={room.title}
             description={room.description}

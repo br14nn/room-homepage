@@ -1,34 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import SlideImageContainer from "./SlideImageContainer";
+import SlideDescriptionContainer from "./SlideDescriptionContainer";
+
 type TSlideContentProps = {
-  desktopImgLink: any;
-  mobileImgLink?: any;
+  desktopImgSrc: any;
+  mobileImgSrc?: any;
   imgAlt: string;
   title: string;
   description: string;
 };
 
 export default function SlideContent({
-  desktopImgLink,
-  mobileImgLink,
+  desktopImgSrc,
+  mobileImgSrc,
   imgAlt,
   title,
   description,
 }: TSlideContentProps) {
   return (
     <div className="flex h-full w-full flex-row items-center justify-center bg-white">
-      <div className="h-full w-[60%]">
+      <SlideImageContainer>
         <Image
           className="h-full w-full object-cover"
-          src={desktopImgLink}
+          src={desktopImgSrc}
           alt={imgAlt}
         />
-      </div>
-      <div className="flex h-full w-[40%] flex-col gap-6 px-20 py-32">
-        <h1 className="text-4xl font-[600] leading-none  tracking-tight text-black">
+      </SlideImageContainer>
+      <SlideDescriptionContainer>
+        <h1 className="text-3xl font-[600] leading-none tracking-tight  text-black 2xl:text-4xl">
           {title}
         </h1>
+
         <p className="font-[500] text-dark-gray">{description}</p>
 
         <Link
@@ -38,6 +42,7 @@ export default function SlideContent({
           <p className="text-lg tracking-[0.5em] group-hover/shopNowLink:text-very-dark-gray">
             SHOP NOW
           </p>
+
           <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
             <path
               className="fill-black group-hover/shopNowLink:fill-very-dark-gray"
@@ -47,7 +52,7 @@ export default function SlideContent({
             />
           </svg>
         </Link>
-      </div>
+      </SlideDescriptionContainer>
     </div>
   );
 }

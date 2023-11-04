@@ -4,8 +4,8 @@ type TLink = {
 };
 
 type TSliderData = {
-  desktopImgLink: any;
-  mobileImgLink: any;
+  desktopImgSrc: any;
+  mobileImgSrc: any;
   imgAlt: string;
   title: string;
   description: string;
