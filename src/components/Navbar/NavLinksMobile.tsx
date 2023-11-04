@@ -35,11 +35,11 @@ export default function NavLinksMobile({
     >
       <CloseNavButton onClick={closeNavOnClick} />
 
-      <ul className="xs:gap-5 flex flex-row items-center justify-center gap-3 sm:gap-7">
+      <ul className="flex flex-row items-center justify-center gap-3 xs:gap-5 sm:gap-7">
         {linksList.map((link) => (
           <NavLinkList
             key={nanoid()}
-            className="font-bold text-black"
+            className="text-black"
             hrClassName="border-black"
             href={link.href}
           >

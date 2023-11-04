@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      padding: {
+        18: "4.5rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -23,25 +26,27 @@ const config: Config = {
         lg: "1.25rem",
         xl: "1.563rem",
         "2xl": "1.953rem",
+        "3xl": "2.441rem",
+        "4xl": "3.052rem",
       },
       screens: {
-        xs: "360px",
-        // => @media (min-width: 360px) { ... }
+        xs: "22.5rem",
+        // => @media (min-width: 22.5rem) { ... }
 
-        sm: "640px",
-        // => @media (min-width: 640px) { ... }
+        sm: "40rem",
+        // => @media (min-width: 40rem) { ... }
 
-        md: "768px",
-        // => @media (min-width: 768px) { ... }
+        md: "48rem",
+        // => @media (min-width: 48rem) { ... }
 
-        lg: "1024px",
-        // => @media (min-width: 1024px) { ... }
+        lg: "64rem",
+        // => @media (min-width: 64rem) { ... }
 
-        xl: "1280px",
-        // => @media (min-width: 1280px) { ... }
+        xl: "80rem",
+        // => @media (min-width: 80rem) { ... }
 
-        "2xl": "1536px",
-        // => @media (min-width: 1536px) { ... }
+        "2xl": "90rem",
+        // => @media (min-width: 96rem) { ... }
       },
     },
   },

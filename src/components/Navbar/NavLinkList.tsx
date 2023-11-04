@@ -44,7 +44,7 @@ export default function NavLinkList({
       onHoverStart={handleHoverStart}
       onHoverEnd={handleHoverEnd}
     >
-      <Link className={twMerge("font-bold text-white", className)} href={href}>
+      <Link className={twMerge("font-[500] text-white", className)} href={href}>
         {children}
       </Link>
       <motion.hr
